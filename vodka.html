@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vodka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar">
+        <!-- Brand/logo -->
+        <a class="navbar-brand container-fluent" href="index.html">
+            <img src="img/logo.jpg" class="rounded-circle" alt="logo" style="width:50px; text-align:center;">
+        </a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                            ACCOUNT
+                        </button>
+                        <div class="dropdown-menu container">
+                            <a class="dropdown-item" href="signup.html">Sing up</a>
+                            <a class="dropdown-item" href="login.html">Log in</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="book.html" class="btn btn-info container-fluent" role="button">BOOK</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="btn btn-info" role="button">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="btn btn-info" role="button">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                            GAME
+                        </button>
+                        <div class="dropdown-menu container">
+                            <a class="dropdown-item" href="nacho.1.html">SinglePlayer</a>
+                            <a class="dropdown-item" href="nacho.html">MultiPlayer</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <header class="container">
+        <h1 style="color:teal"><strong>Vodka Cocktails</strong></h1>
+    </header>
+    <br>
+    <div class="container">
+        <div class="container">
+            <div style="background:rgb(202, 209, 219)" class="jumbotron">
+                <div>
+                    <div id="my-beautiful-carousel" class="carousel slide container-fluid" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#my-beautiful-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="my-beautiful-carousel" data-slide-to="1"></li>
+                            <li data-target="my-beautiful-carousel" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner container">
+                            <div class="carousel-item active">
+                                <img id="vod-blood" class="mx-auto d-block" src="img/bloodymary.jpg" alt="bloodymary">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="vod-god" class="mx-auto d-block" src="img/godmother.jpg" alt="godmother">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="vod-cos" class="mx-auto d-block" src="img/cosmopolitan.jpg" alt="cosmopolitan">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="vod-white" class="mx-auto d-block" src="img/whiterussian.jpg" alt="whiterussian">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#my-beautiful-carousel" data-slide="prev" style="text-align:center;">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#my-beautiful-carousel" data-slide="next" style="text-align:center;">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+        </div>
+        <div>
+            <h3 class="container">Maybe do you prefer another drink?</h3>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="rum.html" class="btn btn-info" role="button">RUM COCKTAILS</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="vodka.html" class="btn btn-info" role="button">VODKA COCKTAILS</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="whisky.html" class="btn btn-info" role="button">WHISKEY COCKTAILS</a>
+
+                </li>
+            </ul>
+        </div>
+        <br>
+        <table class="table table-dark table-striped" style="text-align:left;">
+            <thead class="container" style="text-align:center;">
+                <tr>
+                    <th>NAME</th>
+                    <th>MAIN INGREDIENTS</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody class="container" style="text-align:center;">
+                <tr>
+                    <td>Bloody mary</td>
+                    <td>vodka,tomato, perrins, lemon, celery, salt, pepper </td>
+                    <td>5€</td>
+                </tr>
+                <tr>
+                    <td>Godmother</td>
+                    <td>Vodka, amaretto </td>
+                    <td>7€</td>
+                </tr>
+                <tr>
+                    <td>Cosmopolitan</td>
+                    <td>Vodka, triple sec, lemon juice, cranberry juice </td>
+                    <td>6€</td>
+                </tr>
+                <tr>
+                    <td>White Russian</td>
+                    <td>Vodka,Kalhua, milk's cream</td>
+                    <td>6€</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

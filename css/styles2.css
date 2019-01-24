@@ -1,0 +1,19 @@
+canvas {
+    border:1px solid black;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+
+    
+}
+
+#hide {
+    display: none;
+    color: red;
+}
+
+#hide2 {
+    display: none;
+    color: red;
+}

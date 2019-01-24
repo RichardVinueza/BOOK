@@ -1,0 +1,81 @@
+
+
+.btn {
+    margin: 5px;
+}
+
+.img-carousel-project {
+    width: 100%;
+    height: auto;
+}
+
+#fondo{
+    background:rgb(202, 209, 219);
+}
+
+#welcome{
+    color:#17a2b8;
+}
+
+#visit{
+    color: #17a2b8;
+}
+
+div.gallery{
+    margin: 5%;
+}
+
+div.gallery img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.desc {
+    padding: 2%;
+    text-align: center;
+    border: black;
+}
+
+
+
+#pinacolada, #maitai, #cosmopolitan,#manhattan, #whiterussian, #mojito, #daiquiri, #bloodymary, #godmother, #blackjack, #whiskysour, #oldfashioned {
+    height: 140px;
+}
+
+#rum-daiquiri,#rum-mojito, #rum-maitai, #rum-pinacolada{
+    height:300px; 
+}
+
+#whisky-manhattan,#whisky-blackjack, #whisky-whiskysour, #whisky-oldfashined{
+    height:300px; 
+}
+
+#vod-blood,#vod-god,#vod-cos,#vod-white{
+    height:300px; 
+}
+
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.my-container{
+    position: relative;
+    background-color: red;
+    text-align:center;
+}
+
+.text-container{
+    position:absolute;
+    /* margin: auto 50%; */
+    top: calc(50%);
+}
+
+h3{
+    font-size: 32px;
+}
