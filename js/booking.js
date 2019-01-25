@@ -21,6 +21,7 @@ function initialize() {
 
 }
 
+
 function showBookingsFromFirebase() {
   refBookings.on("value", function (snap) { //Me devuelve el valor correspondiente a cada convalidación
     var data = snap.val(); //Me da los valores de firebase que existen dentro de la referencia remBookings
@@ -73,7 +74,7 @@ function editBookingFromFirebase() {
     document.getElementById("name").value = data.name;
     document.getElementById("surname").value = data.surname;
     document.getElementById("phone-number").value = data.phoneNumber;
-    document.getElementsByClassName("option").value = data.adultQuestion;
+    document.getElementsById("adult-question").value = data.adultQuestion;
     document.getElementById("identity-document").value = data.identityDocument;
     document.getElementById("customers").value = data.customers;
   });

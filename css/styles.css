@@ -97,3 +97,26 @@ h3{
     left: 0;
     width: 70%;
 }
+
+#center{
+    background-color:skyblue;
+    background-size: 100vw 100vh;
+    margin: auto;
+    background-color: skyblue;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+
+#form-bookings{
+    margin: auto;
+    background-color: skyblue;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
