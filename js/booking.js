@@ -73,7 +73,7 @@ function editBookingFromFirebase() {
     document.getElementById("name").value = data.name;
     document.getElementById("surname").value = data.surname;
     document.getElementById("phone-number").value = data.phoneNumber;
-    document.getElementById("adult-question").value = data.adultQuestion;
+    document.getElementsByClassName("option").value = data.adultQuestion;
     document.getElementById("identity-document").value = data.identityDocument;
     document.getElementById("customers").value = data.customers;
   });

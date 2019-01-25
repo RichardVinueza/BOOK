@@ -80,7 +80,20 @@ h3{
     font-size: 32px;
 }
 
-#center{
+#center{ 
     text-align: center;
 
+}
+
+.col-sm-6{ /* Este estilo sirve para colocar un formulario a la derecha y con un determinado ancho*/
+    position:absolute;
+    right: 0;
+    width: 30%;
+ 
+}
+
+.col-sm-9{ /* Este estilo sirve para colocar un formulario a la izquierda y con un determinado ancho*/
+    position:absolute;
+    left: 0;
+    width: 70%;
 }
