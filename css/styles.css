@@ -80,6 +80,9 @@ h3{
     font-size: 32px;
 }
 
+
+/*A partir de aquí es el segundo trimestre*/
+
 #center{ 
     text-align: center;
 
@@ -119,4 +122,9 @@ h3{
     margin-top: 20px;
     border-radius: 7px;
 
+}
+
+#fill-in, #long-name, #long-surname, #wrong-number, #wrong-identity{
+    display:none;
+    color:red;
 }

@@ -94,13 +94,13 @@
                         </tr>
                         <tr>
                             <th>Name</th>
-                            <th>Surname</th>
+                            <th>Surnames</th>
                             <th>Phone Number</th>
                             <th>Adult?</th>
                             <th>ID</th>
                             <th>Customers</th>
-                            <th></th>
-                            <th></th>
+                            <th>Edit</th>
+                            <th>Delete</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -113,35 +113,78 @@
         <div class="container">
             <div class="col-sm-6">
                 <!--Formulario para añadir/modificar convalidaciones-->
-                <form id="form-bookings">
+
+                <form action="registrar.php" id="form-bookings" name="completeForm" method="post" onsubmit="return validation();">
+                    <!--onsubmit="return validation();"-->
                     <div class="form-group">
+                        <div id="fill-in" style='display:none;'>
+                            Missing data. The boxes can't be empty.
+                            Please, ress F5 and try again.
+                        </div>
                         <label for="name">Name</label>
                         <input type="text" class="form-control" name="name" value="" id="name">
+                        <div id="long-name" style='display:none;'>
+                            The name is too long. Please, press F5 and try again.
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="surname">Surname</label>
                         <input type="text" class="form-control" name="surname" value="" id="surname">
+                        <div id="long-surname" style='display:none;'>
+                            The surname is too long. Please, press F5 and try again.
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="phone-number">Phone Number</label>
                         <input type="text" class="form-control" name="phoneNumber" value="" id="phone-number">
+                        <div id="wrong-number" style='display:none;'>
+                            The phone number is bit short,long or you are using letters instead of numbers.
+                            Please, press F5 and try again.
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="adult-question">Adult?</label>
-                        <input type="text" class="form-control" name="adultQuestion" value="" id="adult-question">
+
+                    <br>
+
+                    <div class="form-check-inline">
+                        <label class="form-check-label">Adult</label>
+                        <input type="checkbox" class="form-check-input" name="adultQuestion" value="checked" id="adult-question">
                     </div>
+
+                    <!-- Deja el espacio en blanco en el formulario-->
+                    <!--
+                            <label for="adult-question">Adult?</label>
+                            <select class="form-control" name="adultQuestion" id="adult-question">
+                            <option label=" " selected value hidden></option> 
+                            <option>YES</option>
+                            <option>NO</option>
+                        </select>                           
+                        -->
+
+                    <br>
+                    <br>
                     <div class="form-group">
                         <label for="identity-document">Identity document</label>
                         <input type="text" class="form-control" name="identityDocument" value="" id="identity-document">
+                        <div id="wrong-identity" style='display:none;'>
+                            The ID is wrong. Please, press F5 and try again.
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="customers">Customers</label>
-                        <input type="text" class="form-control" name="customers" value="" id="customers">
+                        <select class="form-control" name="customers" id="customers">
+                            <option label=" " selected value hidden></option>
+                            <!-- Deja el espacio en blanco en el formulario-->
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
                     <input type="submit" value="DONE" id="button-send-booking">
-                    <br>
-                    <br>
                 </form>
+                <br>
+                <br>
             </div>
         </div>
     </div>

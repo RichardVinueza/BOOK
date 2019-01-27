@@ -17,7 +17,7 @@ function initialize() {
 
   refBookings = firebase.database().ref().child("Bookings");
 
- showBookingsFromFirebase();
+  showBookingsFromFirebase();
 
 }
 
@@ -69,12 +69,12 @@ function showBookingsFromFirebase() {
 function editBookingFromFirebase() {
   var keyFromBookingsToEdit = this.getAttribute("data-booking");
   refBookingsToEdit = refBookings.child(keyFromBookingsToEdit);
-  refBookingsToEdit.once("value", function(snap) {
+  refBookingsToEdit.once("value", function (snap) {
     var data = snap.val();
     document.getElementById("name").value = data.name;
     document.getElementById("surname").value = data.surname;
     document.getElementById("phone-number").value = data.phoneNumber;
-    document.getElementsById("adult-question").value = data.adultQuestion;
+    document.getElementById("adult-question").value = data.adultQuestion;
     document.getElementById("identity-document").value = data.identityDocument;
     document.getElementById("customers").value = data.customers;
   });
@@ -82,6 +82,75 @@ function editBookingFromFirebase() {
   modo = UPDATE;
 
 }
+
+
+
+
+
+
+/*
+(function () {
+
+  var formulario = document.getElementsByTagName('completeForm')[0],
+    elementos = document.formulario.elements;
+  var boton = document.getElementById("button-send-booking");
+
+
+
+
+  var validarNombre = function () {
+
+    if (document.formulario.name.value == "") {
+
+      alert("completa el campo nombre");
+    }
+
+  };
+
+
+  var validar = function () {
+
+    validarNombre();
+
+  };
+
+  document.formulario.addEventListener("submit", validar);
+
+})();
+
+*/
+
+function validation() {
+  var name, surname, phone, adult, identity, customer;
+  name = document.getElementById("name").value;
+  surname = document.getElementById("surname").value;
+  phone = document.getElementById("phone-number").value;
+  adult = document.getElementById("adult-question").value;
+  identity = document.getElementById("identity-document").value;
+  customer = document.getElementById("customers").value;
+
+  if (name == "" || surname == "" || phone == "" || adult == "" || identity == "" || customer == "") {
+    document.getElementById("fill-in").style.display = 'block';
+
+  }
+  else if (name.length > 20) {
+    document.getElementById("long-name").style.display = 'block';
+
+  }
+  else if (surname.length > 20) {
+    document.getElementById("long-surname").style.display = 'block';
+
+  }
+  else if (phone.length > 9 || phone.length < 9 || isNaN(phone)) {
+    document.getElementById("wrong-number").style.display = 'block';
+
+  }
+  else if (identity.length > 9 || identity.length < 9) {
+    document.getElementById("wrong-identity").style.display = 'block';
+
+  }
+}
+
 
 function deleteBookingFromFirebase() {
   var keyFromBookingDelete = this.getAttribute("data-booking");
@@ -115,7 +184,7 @@ function sendBookingToFirebase(event) {
 
 
       });
-      modo = UPDATE;
+      modo = CREATE;
       document.getElementById("button-send-booking").value = CREATE;
       break;
   }
