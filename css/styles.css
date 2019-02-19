@@ -14,11 +14,11 @@
 }
 
 #welcome{
-    color:#17a2b8;
+    color:skyblue;
 }
 
 #visit{
-    color: #17a2b8;
+    color: skyblue;
 }
 
 div.gallery{
@@ -105,7 +105,7 @@ h3{
     background-color:skyblue;
     background-size: 100vw 100vh;
     margin: auto;
-    background-color: skyblue;
+    background-color:skyblue;
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -127,4 +127,9 @@ h3{
 #fill-in, #long-name, #long-surname, #wrong-number, #wrong-identity{
     display:none;
     color:red;
+}
+
+#rss{
+    width:50px;
+    height:50px;
 }

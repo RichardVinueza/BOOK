@@ -5,14 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Thanks</title>
+    <title>upload</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <script src="js/upload.js"></script>
+    
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHwrQhSGXIhAx3V7VK1huCLhqP43eHwZc",
+    authDomain: "crudbook.firebaseapp.com",
+    databaseURL: "https://crudbook.firebaseio.com",
+    projectId: "crudbook",
+    storageBucket: "crudbook.appspot.com",
+    messagingSenderId: "106583233886"
+  };
+  firebase.initializeApp(config);
+</script>
 </head>
 
 <body>
@@ -69,17 +85,28 @@
     </nav>
     <br>
     <div class="container">
-        <br>
-        <header>
-            <br>
-            <div class="jumbotron jumbotron">
-                <div class="container">
-                    <h1 style="color: #17a2b8;"><strong>THANKS TO CHOOSE US</strong></h1>
-                    <p><b> See you soon!</b> </p>
+        <div class="row">
+            <div class="col-sm-8">
+                <div id="images-from-firebase">
+
                 </div>
+                <!--Aquí van las imagenes-->
             </div>
-        </header>
+            <div class="col-sm-4">
+                <form id="form-images">
+
+                </form>
+                <label class="btn btn-file">
+                    <input type="file" name="file"  id="file"> 
+                    <img src="img/upload.png" class="img-responsive" alt="download">
+
+                </label>
+              
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>

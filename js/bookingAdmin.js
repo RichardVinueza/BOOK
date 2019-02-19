@@ -43,9 +43,9 @@ function showBookingsFromFirebase() {
         '</button>' +
         "</td>" +
         "<td>" +
-       // '<button class ="btn tbn-danger delete" data-booking="' + key + '">' +
-       // '<i class="fas fa-trash"></i>' +
-       // '</button>' +
+        '<button class ="btn tbn-danger delete" data-booking="' + key + '">' +
+        '<i class="fas fa-trash"></i>' +
+        '</button>' +
         "</td>" +
         "<td>" +
         "</td>" +

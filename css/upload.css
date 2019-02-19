@@ -1,0 +1,32 @@
+.btn{
+    margin: 5px;
+}
+
+.card{
+    background-size: 100vw 100vh;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+#center{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#uploader{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 320%;
+    margin-bottom: 10px;
+
+}
+
+#file{   
+display:none;
+
+}
