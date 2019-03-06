@@ -30,3 +30,15 @@
 display:none;
 
 }
+
+#InStorage, #InDatabase{
+    display:none;
+    color:black;
+}
+
+#little{
+    width: 100%;
+    height: 100%;
+
+}
+

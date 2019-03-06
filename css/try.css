@@ -1,0 +1,170 @@
+
+
+.btn {
+    margin: 5px;
+}
+
+.img-carousel-project {
+    width: 100%;
+    height: auto;
+}
+
+#fondo{
+    background:rgb(202, 209, 219);
+}
+
+#welcome{
+    color:skyblue;
+}
+
+#visit{
+    color: skyblue;
+}
+
+div.gallery{
+    margin: 5%;
+}
+
+div.gallery img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.desc {
+    padding: 2%;
+    text-align: center;
+    border: black;
+}
+
+
+
+#pinacolada, #maitai, #cosmopolitan,#manhattan, #whiterussian, #mojito, #daiquiri, #bloodymary, #godmother, #blackjack, #whiskysour, #oldfashioned {
+    height: 140px;
+}
+
+#rum-daiquiri,#rum-mojito, #rum-maitai, #rum-pinacolada{
+    height:300px; 
+}
+
+#whisky-manhattan,#whisky-blackjack, #whisky-whiskysour, #whisky-oldfashined{
+    height:300px; 
+}
+
+#vod-blood,#vod-god,#vod-cos,#vod-white{
+    height:300px; 
+}
+
+.center-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.my-container{
+    position: relative;
+    background-color: red;
+    text-align:center;
+}
+
+.text-container{
+    position:absolute;
+    /* margin: auto 50%; */
+    top: calc(50%);
+}
+
+h3{
+    font-size: 32px;
+}
+
+
+/*A partir de aquí es el segundo trimestre*/
+
+#center{ 
+    text-align: center;
+
+}
+
+.col-sm-6{ /* Este estilo sirve para colocar un formulario a la derecha y con un determinado ancho*/
+    position:absolute;
+    right: 0;
+    width: 30%;
+ 
+}
+
+.col-sm-9{ /* Este estilo sirve para colocar un formulario a la izquierda y con un determinado ancho*/
+    position:absolute;
+    left: 0;
+    width: 70%;
+}
+
+#center{
+    background-color:skyblue;
+    background-size: 100vw 100vh;
+    margin: auto;
+    background-color:skyblue;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+
+#form-bookings{
+    margin: auto;
+    background-color: skyblue;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+#fill-in, #long-name, #long-surname, #wrong-number, #wrong-identity{
+    display:none;
+    color:red;
+}
+
+#rss{
+    width:50px;
+    height:50px;
+}
+
+.card{
+    background-size: 100vw 100vh;
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+
+#uploader{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 320%;
+    margin-bottom: 10px;
+
+}
+
+#file{   
+display:none;
+
+}
+
+#InStorage, #InDatabase{
+    display:none;
+    color:black;
+}
+
+#little{
+    width: 100%;
+    height: 100%;
+
+}
+

@@ -15,20 +15,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <script src="js/upload.js"></script>
-    
-<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAHwrQhSGXIhAx3V7VK1huCLhqP43eHwZc",
-    authDomain: "crudbook.firebaseapp.com",
-    databaseURL: "https://crudbook.firebaseio.com",
-    projectId: "crudbook",
-    storageBucket: "crudbook.appspot.com",
-    messagingSenderId: "106583233886"
-  };
-  firebase.initializeApp(config);
-</script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAHwrQhSGXIhAx3V7VK1huCLhqP43eHwZc",
+            authDomain: "crudbook.firebaseapp.com",
+            databaseURL: "https://crudbook.firebaseio.com",
+            projectId: "crudbook",
+            storageBucket: "crudbook.appspot.com",
+            messagingSenderId: "106583233886"
+        };
+        firebase.initializeApp(config);
+    </script>
 </head>
 
 <body>
@@ -88,22 +88,24 @@
         <div class="row">
             <div class="col-sm-8">
                 <div id="images-from-firebase">
-
+                    <!--Aquí van las imagenes-->
                 </div>
-                <!--Aquí van las imagenes-->
+
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-2">
                 <form id="form-images">
+                    <label class="btn btn-file">
+                        <input type="file" name="file" id="file">
+                        <img src="img/upload.png" class="img-responsive" alt="download" id="little">
+                    </label>
+                    <label for="cocktail">Cocktail</label>
+                    <input type="text" class="form-control" name="cocktail" value="" id="cocktail">
+                    <label for="ingredients">Ingredients</label>
+                    <input type="text" class="form-control" name="ingredients" value="" id="ingredients">
 
                 </form>
-                <label class="btn btn-file">
-                    <input type="file" name="file"  id="file"> 
-                    <img src="img/upload.png" class="img-responsive" alt="download">
 
-                </label>
-              
             </div>
-
         </div>
     </div>
 
